@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     }
     void onTroggerEnter(Collider other)
     {
-        other.gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 }
