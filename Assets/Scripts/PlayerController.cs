@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public GameObject LoseTextObject;
 
     private Rigidbody rb;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
+        LoseTextObject.SetActive(false);
     }
 
     private void OnMove(InputValue movementValue)
@@ -56,6 +58,11 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+        }
+
+        if (other.gameObject.CompareTag("Tree"))
+        {
+            LoseTextObject.SetActive(true);
         }
     }
 }
