@@ -1,0 +1,16 @@
+{
+"companyName": "Raquel Frankel",
+"productName": "Banana Dash",
+"productVersion": "0.1",
+"dataUrl": "RFrankelBuild.data.unityweb",
+"wasmCodeUrl": "RFrankelBuild.wasm.code.unityweb",
+"wasmFrameworkUrl": "RFrankelBuild.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.13f1"
+}
